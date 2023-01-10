@@ -1,6 +1,6 @@
 <div class="captn-face-snap-card" [ngClass]="{snapped: buttonText === 'Oops, un snap!'}">
-  <h2>{{ captnFaceSnap.title }}</h2>
-  <p>Mise en ligne le {{ captnFaceSnap.createDate }}</p>
+  <h2>{{ captnFaceSnap.title | titlecase }}</h2>
+  <p>Mise en ligne {{ captnFaceSnap.createDate | date: 'à HH:MM, le d MMMM YYYY ' }}</p>
   <img [src]="captnFaceSnap.imageUrl" [alt]="captnFaceSnap.title">
   <p>{{ captnFaceSnap.description}}</p>
   <p *ngIf="captnFaceSnap.location">Photo prise: {{ captnFaceSnap.location }}</p>
