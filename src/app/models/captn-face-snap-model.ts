@@ -1,4 +1,5 @@
 export class CaptnFaceSnapModel {
+  id!: number;
   title!: string;
   description!: string;
   createDate!: Date;

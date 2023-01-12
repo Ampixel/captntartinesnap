@@ -8,11 +8,11 @@ import {CaptnFaceSnapsService} from "../services/captn-face-snaps.service";
   styleUrls: ['./captn-face-snap-list.component.scss']
 })
 export class CaptnFaceSnapListComponent implements OnInit {
-  faceSnaps: CaptnFaceSnapModel[] = [];
-  constructor( private capentFaceSnapsService: CaptnFaceSnapsService ) { }
+  captnFaceSnaps: CaptnFaceSnapModel[] = [];
+  constructor( private capntFaceSnapsService: CaptnFaceSnapsService ) { }
 
   ngOnInit(): void {
-    this.faceSnaps = this.capentFaceSnapsService.faceSnaps;
+    this.captnFaceSnaps = this.capntFaceSnapsService.getAllCaptnFaceSnaps();
   }
 
 }
