@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CaptnFaceSnapComponent } from './captn-face-snap/captn-face-snap.component';
 import { CaptnFaceSnapListComponent } from './captn-face-snap-list/captn-face-snap-list.component';
 import { HeaderComponent } from './header/header.component';
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'fr-FR'}
