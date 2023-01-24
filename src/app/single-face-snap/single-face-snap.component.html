@@ -1,4 +1,4 @@
-<div class="captn-face-snap-card" [ngClass]="{snapped: buttonText === 'Oops, un snap!'}">
+<div class="captn-face-snap-card" *ngIf="captnFaceSnap$ | async as captnFaceSnap" [ngClass]="{snapped: buttonText === 'Oops, un snap!'}">
   <h2>{{ captnFaceSnap.title | titlecase }}</h2>
   <a routerLink="/captnfacesnaps">Back</a>
   <p>Mise en ligne {{ captnFaceSnap.createdDate | date: 'à HH:MM, le d MMMM YYYY ' }}</p>

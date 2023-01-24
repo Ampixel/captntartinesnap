@@ -17,8 +17,8 @@ export class CaptnFaceSnapsService {
     return this.http.get<CaptnFaceSnapModel[]>('http://localhost:3000/facesnaps');
   }
 
-  getCaptnFaceSnapById(captnFaceSnapId:number):CaptnFaceSnapModel{
-
+  getCaptnFaceSnapById(captnFaceSnapId:number): Observable<CaptnFaceSnapModel>{
+    return this.http.get<CaptnFaceSnapModel>(`http://localhost:3000/facesnaps/${captnFaceSnapId}`);
   }
 
   snapCaptnFaceSnapById(captnFaceSnapId:number, snapType : 'snap' | 'unsnap'): void{
