@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {CaptnFaceSnapModel} from "../models/captn-face-snap-model";
 import {CaptnFaceSnapsService} from "../services/captn-face-snaps.service";
 import {ActivatedRoute} from "@angular/router";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-single-face-snap',
@@ -11,6 +12,7 @@ import {ActivatedRoute} from "@angular/router";
 export class SingleFaceSnapComponent implements OnInit {
 
   captnFaceSnap!: CaptnFaceSnapModel;
+  captnFaceSnap$!: Observable<CaptnFaceSnapModel>;
   buttonText!: string;
 
   constructor( private capntFaceSnapsService : CaptnFaceSnapsService,
