@@ -11,7 +11,6 @@ import {Observable} from "rxjs";
 })
 export class SingleFaceSnapComponent implements OnInit {
 
-  captnFaceSnap!: CaptnFaceSnapModel;
   captnFaceSnap$!: Observable<CaptnFaceSnapModel>;
   buttonText!: string;
 
