@@ -1,6 +1,6 @@
 import {Component, OnInit, Input} from '@angular/core';
-import {CaptnFaceSnapModel} from "../models/captn-face-snap-model";
-import {CaptnFaceSnapsService} from "../services/captn-face-snaps.service";
+import {CaptnFaceSnapModel} from "../../../core/models/captn-face-snap-model";
+import {CaptnFaceSnapsService} from "../../../core/services/captn-face-snaps.service";
 import {Router} from "@angular/router";
 
 @Component({
